@@ -3,10 +3,6 @@ import java.util.Scanner;
 public class Main2 {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("What is your favorite fruit? ");
-        String name = scanner.nextLine();
 
         if(args.length > 0) {
             if (realNum(args[0])) {
@@ -14,13 +10,13 @@ public class Main2 {
                 int inputAmount = Integer.parseInt(args[0]);
 
 
-                //System.out.println(name + inputAmount);
+                Scanner scanner = new Scanner(System.in);
 
+                System.out.println("What is your favorite fruit? ");
+                String fruitInput = scanner.nextLine();
 
-
-
-            for (int i = 0; i < inputAmount; i++ ) {
-                System.out.println("Woah");
+                for (int i = 0; i < inputAmount; i++) {
+                    System.out.println("You like " + fruitInput + "!");
             }
         } else {
             System.out.println("uh-oh");
