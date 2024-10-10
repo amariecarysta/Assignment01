@@ -18,6 +18,7 @@ public class Main2 {
                 for (int i = 0; i < inputAmount; i++) {
                     System.out.println("You like " + fruitInput + "!");
             }
+                System.out.println("And that's all I have to say!");
         } else {
             System.out.println("uh-oh");
          }
